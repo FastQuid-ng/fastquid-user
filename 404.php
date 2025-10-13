@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="color-scheme" content="dark light">
+
+    <title>FastQuid&trade; :: Error 404</title>
+    
+    <meta name="author" content="Webify">
+
+    <link rel="shortcut icon" href="./assets/img/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/utility.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f=satoshi@900,700,500,300,401,400&amp;display=swap">
+</head>
+
+<body>
+    <div class="d-flex flex-column justify-content-center align-items-center vh-100 overflow-y-auto gradient-bottom-right">
+        <div class="container-xxl">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6 text-center h-100 order-lg-2">
+                    <img src="./assets/img/error.svg" alt="...">
+                </div>
+                <div class="col-lg-4 order-lg-1">
+                    <div class="">
+                        <h1 class="display-1 mb-4">Ooops!</h1>
+                        <p class="lead lh-relaxed">The page you are looking for could not be found.</p>
+                        <div class="my-10">
+                            <a href="./" class="btn btn-dark">Return Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
