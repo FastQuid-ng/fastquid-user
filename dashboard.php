@@ -4,154 +4,154 @@ include "./components/header.php";
     <div class="d-flex flex-column flex-lg-row h-lg-100 gap-1">
         <?php include "./components/side-nav.php"; ?>
 
-    <div class="flex-lg-fill overflow-x-auto ps-lg-1 vstack vh-lg-100 position-relative">
-        <?php include "./components/top-nav.PHP"; ?>
+        <div class="flex-lg-fill overflow-x-auto ps-lg-1 vstack vh-lg-100 position-relative">
+            <?php include "./components/top-nav.PHP"; ?>
 
-        <div class="flex-fill overflow-y-lg-auto scrollbar bg-body rounded-top-4 rounded-top-start-lg-4 rounded-top-end-lg-0 border-top border-lg shadow-2">
-            <main class="container-fluid px-3 py-5 p-lg-6 p-xxl-8">
-                <div class="mb-6 mb-xl-10">
-                    <div class="row g-3 align-items-center">
-                        <div class="col">
-                            <h1 class="ls-tight"><span style="font-weight: 300">Hello,</span> <?= $firstName ?></h1>
-                            <span class="eyebrow mb-1" id="greet"></span>
+            <div class="flex-fill overflow-y-lg-auto scrollbar bg-body rounded-top-4 rounded-top-start-lg-4 rounded-top-end-lg-0 border-top border-lg shadow-2">
+                <main class="container-fluid px-3 py-5 p-lg-6 p-xxl-8">
+                    <div class="mb-6 mb-xl-10">
+                        <div class="row g-3 align-items-center">
+                            <div class="col">
+                                <h1 class="ls-tight"><span style="font-weight: 300">Hello,</span> <?= $firstName ?></h1>
+                                <span class="eyebrow mb-1" id="greet"></span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                
-    <div class="row g-3 g-xl-6">
-        <div class="col-xxl-8">
-            <div class="vstack gap-3 gap-xl-6">
-                <div class="card bg-danger bg-opacity-10 border-danger border-opacity-40">
-                    <div class="card-body">
-                        <div class="d-flex">
-                            <div>
-                                <div class="hstack gap-3 mb-1">
-                                <h4 class="fw-semibold">Total Balance</h4>
-                                <a href="javascript:void(0);" id="toggle-balance">
-                                    <i class="bi bi-eye" id="eye-icon"></i>
-                                </a>
+                    
+                    
+                    <div class="row g-3 g-xl-6">
+                        <div class="col-xxl-8">
+                            <div class="vstack gap-3 gap-xl-6">
+                                <div class="card bg-danger bg-opacity-10 border-danger border-opacity-40">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div>
+                                                <div class="hstack gap-3 mb-1">
+                                                    <h4 class="fw-semibold">Loan Balance</h4>
+                                                    <a href="javascript:void(0);" id="toggle-balance">
+                                                        <i class="bi bi-eye" id="eye-icon"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="text-2xl text-heading fw-bolder ls-tight" id="balance-amount">₦23,000.48</div>
+                                            </div>
+                                            <div class="ms-auto align-self-end">
+                                                <button type="button" class="btn btn-sm btn-danger">Get a Loan</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="text-2xl text-heading fw-bolder ls-tight" id="balance-amount">₦23,000.48</div>
-                            </div>
-                            <div class="ms-auto align-self-end">
-                                <button type="button" class="btn btn-sm btn-danger">Get a Loan</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="card">
-                    <div class="card-body pb-0">
-                        <div class="mb-2 d-flex align-items-center">
-                            <h5>Cards List</h5>
-                            <div class="ms-auto text-end"><a href="#" class="text-sm fw-semibold">Edit</a></div>
-                        </div>
-                        <div class="hstack gap-2 mt-4 mb-6"><button class="btn btn-sm btn-neutral"><i class="bi bi-plus me-2 d-none d-sm-inline-block"></i>New card</button> <button class="btn btn-sm btn-neutral"><i class="bi bi-gear me-2 d-none d-sm-inline-block"></i>Manage</button></div>
-                        <div
-                            class="surtitle mb-2">My cards</div>
-                    <div class="vstack gap-2 mx-n3">
-                        <div class="position-relative d-flex align-items-center p-3 rounded-3 bg-body-secondary-hover">
-                            <div class="flex-none"><img src="../img/cards/visa.svg" class="w-rem-16 w-md-20 rounded" alt="..."></div>
-                            <div class="ms-3 ms-md-4 flex-fill">
-                                <div class="stretched-link text-limit text-sm text-heading fw-semibold" role="button" data-bs-toggle="offcanvas" data-bs-target="#cardDetailsOffcanvas" aria-controls="cardDetailsOffcanvas">John Snow - Metal</div>
-                                <div class="d-block text-xs gap-2 mt-1"><span>**4291 - Exp: 12/26</span></div>
-                            </div>
-                            <div class="d-none d-sm-block ms-auto text-end"><span class="badge bg-body-secondary text-success">Active</span>
-                                <div class="d-none d-sm-block text-xs text-muted mt-2">Last used: 2 hrs ago</div>
-                            </div>
-                        </div>
-                        <div class="position-relative d-flex align-items-center p-3 rounded-3 bg-body-secondary-hover">
-                            <div class="flex-none"><img src="../img/cards/mastercard.svg" class="w-rem-16 w-md-20 rounded" alt="..."></div>
-                            <div class="ms-3 ms-md-4 flex-fill">
-                                <div class="stretched-link text-limit text-sm text-heading fw-semibold" role="button" data-bs-toggle="offcanvas" data-bs-target="#cardDetailsOffcanvas" aria-controls="cardDetailsOffcanvas">John Snow - Virtual</div>
-                                <div class="d-block text-xs gap-2"><span>**4291 - Exp: 12/26</span></div>
-                            </div>
-                            <div class="d-none d-sm-block ms-auto text-end"><span class="badge bg-body-secondary text-success">Active</span>
-                                <div class="d-none d-sm-block text-xs text-muted mt-2">Last used: 2 hrs ago</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xxl-4">
-        <div class="offcanvas-xxl m-xxl-0 rounded-sm-4 rounded-xxl-0 offcanvas-end overflow-hidden m-sm-4" tabindex="-1" id="responsiveOffcanvas" aria-labelledby="responsiveOffcanvasLabel">
-            <div class="offcanvas-header rounded-top-4 bg-light">
-                <h5 class="offcanvas-title" id="responsiveOffcanvasLabel">Quick Stats</h5><button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#responsiveOffcanvas" aria-label="Close"></button></div>
-            <div class="offcanvas-body d-flex flex-column p-3 p-sm-6 p-xxl-0 gap-3 gap-xxl-6">
-                <div class="vstack gap-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center mb-5">
-                                <div>
-                                    <h5>Recent transactions</h5>
+                                <div class="card">
+                                    <div class="card-body pb-5">
+                                        <div class="mb-2 d-flex align-items-center">
+                                            <h5>My Loan</h5>
+                                            <div class="ms-auto text-end">
+                                                <a href="loan" class="text-sm fw-semibold">View all</a>
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="vstack gap-2 mx-n3">
+                                            <div class="position-relative d-flex align-items-center p-3 rounded-3 bg-body-secondary-hover">
+                                                <div class="d-none d-xl-inline-flex icon icon-shape w-rem-8 h-rem-8 rounded-circle text-sm bg-secondary bg-opacity-25 text-secondary">
+                                                    <i class="bi bi-currency-exchange"></i>
+                                                </div>
+                                                <div class="ms-3 ms-md-4 flex-fill">
+                                                    <div class="stretched-link text-limit text-sm text-heading fw-semibold" role="button" data-bs-toggle="offcanvas" data-bs-target="#cardDetailsOffcanvas" aria-controls="cardDetailsOffcanvas">John Snow - Metal</div>
+                                                    <div class="d-block text-xs gap-2 mt-1"><span>**4291 - Exp: 12/26</span></div>
+                                                </div>
+                                                <div class="d-none d-sm-block ms-auto text-end">
+                                                    <span class="badge bg-success bg-opacity-25 text-success">Active</span>
+                                                    <div class="d-none d-sm-block text-xs text-muted mt-2">Last used: 2 hrs ago</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="vstack gap-2 mx-n3">
+                                            <div class="position-relative d-flex align-items-center p-3 rounded-3 bg-body-secondary-hover">
+                                                <div class="d-none d-xl-inline-flex icon icon-shape w-rem-8 h-rem-8 rounded-circle text-sm bg-danger bg-opacity-25 text-danger">
+                                                    <i class="bi bi-currency-exchange"></i>
+                                                </div>
+                                                <div class="ms-3 ms-md-4 flex-fill">
+                                                    <div class="stretched-link text-limit text-sm text-heading fw-semibold" role="button" data-bs-toggle="offcanvas" data-bs-target="#cardDetailsOffcanvas" aria-controls="cardDetailsOffcanvas">John Snow - Metal</div>
+                                                    <div class="d-block text-xs gap-2 mt-1"><span>**4291 - Exp: 12/26</span></div>
+                                                </div>
+                                                <div class="d-none d-sm-block ms-auto text-end">
+                                                    <span class="badge bg-warning bg-opacity-25 text-warning">Pending</span>
+                                                    <div class="d-none d-sm-block text-xs text-muted mt-2">Last used: 2 hrs ago</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="hstack align-items-center"><a href="#" class="text-muted"><i class="bi bi-arrow-repeat"></i></a></div>
                             </div>
+                        </div>
+
+                        <div class="col-xxl-4">
                             <div class="vstack gap-6">
-                                <div>
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div class="icon icon-shape flex-none text-base text-bg-dark rounded-circle"><img src="../img/crypto/white/btc.svg" class="w-rem-6 h-rem-6" alt="..."></div>
-                                        <div>
-                                            <h6 class="progress-text mb-1 d-block">Bitcoin</h6>
-                                            <p class="text-muted text-xs">Pending - 3 min ago</p>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-5">
+                                            <div>
+                                                <h5>Loan Calculator</h5>
+                                            </div>
                                         </div>
-                                        <div class="text-end ms-auto"><span class="h6 text-sm">-1,500 USD</span></div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div class="icon icon-shape flex-none text-base text-bg-dark rounded-circle"><img src="../img/crypto/white/ada.svg" class="w-rem-6 h-rem-6" alt="..."></div>
-                                        <div>
-                                            <h6 class="progress-text mb-1 d-block">Cardano</h6>
-                                            <p class="text-muted text-xs">Canceled - 3 min ago</p>
+                                        <hr />
+                                        <div class="vstack gap-6">
+                                            <div>
+                                                <form id="loanForm">
+                                                    <div class="row g-5">
+                                                        <!-- Loan Amount -->
+                                                        <div class="col-sm-12">
+                                                            <input type="text" class="form-control" id="loanAmount" placeholder="Enter loan amount" required>
+                                                        </div>
+
+                                                        <!-- Loan Type -->
+                                                        <div class="col-sm-12">
+                                                            <select class="form-select" id="loanType" required>
+                                                                <option disabled selected value="">Select Loan Type</option>
+                                                                <option value="payday">Payday Loan</option>
+                                                                <option value="personal">Personal Loan</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <!-- Payday Loan Duration -->
+                                                        <div class="col-sm-12" id="paydayDurationDiv" style="display: none;">
+                                                            <select class="form-select" id="paydayDuration">
+                                                                <option disabled selected value="">Select Duration</option>
+                                                                <option value="1">1 Month</option>
+                                                                <!-- <option value="2">2 Months</option>
+                                                                <option value="3">3 Months</option> -->
+                                                            </select>
+                                                        </div>
+
+                                                        <!-- Personal Loan Duration -->
+                                                        <div class="col-sm-12" id="personalDurationDiv" style="display: none;">
+                                                        <select class="form-select" id="personalDuration">
+                                                            <option disabled selected value="">Select Duration</option>
+                                                            <option value="2">2 Months</option>
+                                                            <option value="3">3 Months</option>
+                                                            <option value="4">4 Months</option>
+                                                            <option value="5">5 Months</option>
+                                                            <option value="6">6 Months</option>
+                                                        </select>
+                                                        </div>
+
+                                                        <!-- Repayment Result -->
+                                                        <div class="col-sm-12 text-center">
+                                                        <p>Repayment Amount</p>
+                                                        <h2 class="ls-tight" id="repaymentAmount">₦0.00</h2>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
                                         </div>
-                                        <div class="text-end ms-auto"><span class="h6 text-sm">-1,500 USD</span></div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div class="icon icon-shape flex-none text-base text-bg-dark rounded-circle"><img src="../img/crypto/white/bnb.svg" class="w-rem-6 h-rem-6" alt="..."></div>
-                                        <div>
-                                            <h6 class="progress-text mb-1 d-block">Binance</h6>
-                                            <p class="text-muted text-xs">Pending - 3 min ago</p>
-                                        </div>
-                                        <div class="text-end ms-auto"><span class="h6 text-sm">-1,500 USD</span></div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div class="icon icon-shape flex-none text-base text-bg-dark rounded-circle"><img src="../img/crypto/white/btc.svg" class="w-rem-6 h-rem-6" alt="..."></div>
-                                        <div>
-                                            <h6 class="progress-text mb-1 d-block">Bitcoin</h6>
-                                            <p class="text-muted text-xs">Pending - 3 min ago</p>
-                                        </div>
-                                        <div class="text-end ms-auto"><span class="h6 text-sm">-1,500 USD</span></div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div class="icon icon-shape flex-none text-base text-bg-dark rounded-circle"><img src="../img/crypto/white/btc.svg" class="w-rem-6 h-rem-6" alt="..."></div>
-                                        <div>
-                                            <h6 class="progress-text mb-1 d-block">Bitcoin</h6>
-                                            <p class="text-muted text-xs">Pending - 3 min ago</p>
-                                        </div>
-                                        <div class="text-end ms-auto"><span class="h6 text-sm">-1,500 USD</span></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </main>
             </div>
         </div>
-    </div>
-    </div>
-    </main>
-    </div>
-    </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
     <script src="./assets/js/main.js"></script>
@@ -176,24 +176,91 @@ include "./components/header.php";
             const toggleBtn = document.getElementById('toggle-balance');
             const balanceAmount = document.getElementById('balance-amount');
             const eyeIcon = document.getElementById('eye-icon');
+            const actualBalance = balanceAmount.textContent.trim();
 
-            let isVisible = true;
-            const actualBalance = balanceAmount.textContent; // store real balance
+            // Check stored preference
+            let isVisible = localStorage.getItem('showBalance') === 'true';
+
+            // Initialize display based on saved preference
+            if (!isVisible) {
+            balanceAmount.textContent = '₦•••••••';
+            eyeIcon.classList.remove('bi-eye');
+            eyeIcon.classList.add('bi-eye-slash');
+            }
 
             toggleBtn.addEventListener('click', function () {
+            isVisible = !isVisible;
             if (isVisible) {
-                balanceAmount.textContent = '₦********';
-                eyeIcon.classList.remove('bi-eye');
-                eyeIcon.classList.add('bi-eye-slash');
-            } else {
                 balanceAmount.textContent = actualBalance;
                 eyeIcon.classList.remove('bi-eye-slash');
                 eyeIcon.classList.add('bi-eye');
+            } else {
+                balanceAmount.textContent = '₦•••••••';
+                eyeIcon.classList.remove('bi-eye');
+                eyeIcon.classList.add('bi-eye-slash');
             }
-            isVisible = !isVisible;
+
+            // Save preference
+            localStorage.setItem('showBalance', isVisible);
             });
         });
     </script>
+
+    <script>
+        const loanAmountInput = document.getElementById('loanAmount');
+        const loanTypeSelect = document.getElementById('loanType');
+        const paydayDiv = document.getElementById('paydayDurationDiv');
+        const personalDiv = document.getElementById('personalDurationDiv');
+        const paydaySelect = document.getElementById('paydayDuration');
+        const personalSelect = document.getElementById('personalDuration');
+        const repaymentText = document.getElementById('repaymentAmount');
+
+        // Format input with commas as user types
+        loanAmountInput.addEventListener('input', function(e) {
+            const rawValue = e.target.value.replace(/[^0-9]/g, '');
+            e.target.value = rawValue.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+            calculateRepayment();
+        });
+
+        // Show/hide duration based on loan type
+        loanTypeSelect.addEventListener('change', () => {
+            paydayDiv.style.display = loanTypeSelect.value === 'payday' ? 'block' : 'none';
+            personalDiv.style.display = loanTypeSelect.value === 'personal' ? 'block' : 'none';
+            calculateRepayment();
+        });
+
+        // Listen for changes
+        [loanTypeSelect, paydaySelect, personalSelect].forEach(el => {
+            el.addEventListener('input', calculateRepayment);
+        });
+
+        function calculateRepayment() {
+            const amountStr = loanAmountInput.value.replace(/,/g, '');
+            const amount = parseFloat(amountStr) || 0;
+            const type = loanTypeSelect.value;
+            let months = 0;
+            let rate = 0;
+
+            if (type === 'payday') {
+            months = parseInt(paydaySelect.value) || 0;
+            rate = 7.5;
+            } else if (type === 'personal') {
+            months = parseInt(personalSelect.value) || 0;
+            rate = 5;
+            }
+
+            if (amount > 0 && months > 0 && rate > 0) {
+            const total = amount + (amount * (rate / 100) * months);
+            const hasDecimal = total % 1 !== 0; // check if there’s a decimal part
+            repaymentText.textContent = hasDecimal 
+                ? `₦${total.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
+                : `₦${Math.round(total).toLocaleString()}`;
+            } else {
+            repaymentText.textContent = '₦0.00';
+            }
+        }
+    </script>
+
 </body>
 
 </html>

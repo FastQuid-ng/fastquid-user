@@ -49,14 +49,7 @@
 
                         <li class="nav-item my-1 mt-7">
                             <a class="nav-link d-flex align-items-center rounded-pill <?= ($currentPage === 'loan') ? 'active' : '' ?>" href="loan">
-                                <i class="bi bi-cash-coin"></i> <span>Loan</span> 
-                                <span class="badge badge-sm rounded-pill me-n2 bg-success-subtle text-success ms-auto"></span>
-                            </a>
-                        </li>
-
-                        <li class="nav-item my-1 mt-7">
-                            <a class="nav-link d-flex align-items-center rounded-pill <?= ($currentPage === 'transactions') ? 'active' : '' ?>" href="transactions">
-                                <i class="bi bi-currency-exchange"></i> <span>Transactions</span> 
+                                <i class="bi bi-currency-exchange"></i> <span>Loan</span> 
                                 <span class="badge badge-sm rounded-pill me-n2 bg-success-subtle text-success ms-auto"></span>
                             </a>
                         </li>

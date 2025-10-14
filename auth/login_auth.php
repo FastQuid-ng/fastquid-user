@@ -132,7 +132,7 @@ try {
                             <tr>
                                 <td style='text-align:center;padding-top:30px;'>
                                     <a href='https://my.fastquid.ng'>
-                                        <img src='https://i.imgur.com/fy55xbW.png' alt='FastQuid' width='200'>
+                                        <img src='https://res.cloudinary.com/dzow7ui7e/image/upload/v1760400813/fastquidLogo_1_guuxoe.png' alt='FastQuid' width='200'>
                                     </a>
                                 </td>
                             </tr>
