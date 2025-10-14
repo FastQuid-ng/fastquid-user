@@ -7,7 +7,7 @@
                 <button class="navbar-toggler ms-n2" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarCollapse" aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand d-inline-block py-lg-1 mb-lg-5" href="dashboard.html">
+                <a class="navbar-brand d-inline-block py-lg-1 mb-lg-5" href="dashboard">
                     <img src="./assets/img/logo-dark.svg" class="logo-dark h-rem-8 h-rem-md-10" alt="...">
                     <img src="./assets/img/logo-light.svg" class="logo-light h-rem-8 h-rem-md-10" alt="...">
                 </a>

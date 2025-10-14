@@ -36,7 +36,7 @@
                     <h1 class="ls-tight fw-bolder h3">Sign in to your account</h1>
                     <div class="mt-3 text-sm text-muted">
                         <span>Don't have an account?</span> 
-                        <a href="signup" class="fw-semibold">Sign up</a>
+                        <a href="signup" class="fw-semibold">Sign up</a> in minutes to get started.
                     </div>
                 </div>
                 <form id="loginForm">
