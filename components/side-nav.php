@@ -47,30 +47,37 @@
                             </a>
                         </li>
 
-                        <li class="nav-item my-1 mt-7">
+                        <li class="nav-item my-1 mt-5">
                             <a class="nav-link d-flex align-items-center rounded-pill <?= ($currentPage === 'loan') ? 'active' : '' ?>" href="loan">
                                 <i class="bi bi-currency-exchange"></i> <span>Loan</span> 
                                 <span class="badge badge-sm rounded-pill me-n2 bg-success-subtle text-success ms-auto"></span>
                             </a>
                         </li>
 
-                        <li class="nav-item my-1 mt-7">
+                        <li class="nav-item my-1 mt-5">
                             <a class="nav-link d-flex align-items-center rounded-pill <?= ($currentPage === 'profile') ? 'active' : '' ?>" href="profile">
                                 <i class="bi bi-person-fill"></i> <span>Profile</span> 
                                 <span class="badge badge-sm rounded-pill me-n2 bg-success-subtle text-success ms-auto"></span>
                             </a>
                         </li>
 
-                        <li class="nav-item my-1 mt-7">
+                        <li class="nav-item my-1 mt-5">
                             <a class="nav-link d-flex align-items-center rounded-pill <?= ($currentPage === 'security') ? 'active' : '' ?>" href="security">
                                 <i class="bi bi-shield-fill-check"></i> <span>Security</span> 
                                 <span class="badge badge-sm rounded-pill me-n2 bg-success-subtle text-success ms-auto"></span>
                             </a>
                         </li>
 
-                        <li class="nav-item my-1 mt-7">
+                        <li class="nav-item my-1 mt-5">
                             <a class="nav-link d-flex align-items-center rounded-pill <?= ($currentPage === 'bank') ? 'active' : '' ?>" href="bank">
                                 <i class="bi bi-bank2"></i> <span>Bank</span> 
+                                <span class="badge badge-sm rounded-pill me-n2 bg-success-subtle text-success ms-auto"></span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item my-1 mt-5">
+                            <a class="nav-link d-flex align-items-center rounded-pill <?= ($currentPage === 'support') ? 'active' : '' ?>" href="support">
+                                <i class="bi bi-chat-left-text-fill"></i> <span>Support</span> 
                                 <span class="badge badge-sm rounded-pill me-n2 bg-success-subtle text-success ms-auto"></span>
                             </a>
                         </li>

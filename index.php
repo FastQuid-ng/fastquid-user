@@ -29,10 +29,16 @@
     <div class="row g-0 justify-content-center" style="background: url('./assets/img/login-bg.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center; background-position-x: left;">
         <div class="col-12 col-md-12 col-lg-7 offset-lg-5 min-vh-100 overflow-y-auto d-flex flex-column justify-content-center position-relative bg-body rounded-top-start-lg-4 border-start-lg shadow-soft-5">
             <div class="w-md-50 mx-auto px-10 px-md-0 py-10">
-                <div class="mb-10">
+                <div class="mb-5">
                     <a class="d-inline-block mb-10" href="./">
                         <img src="./assets/img/logo-dark.svg" class="h-rem-10" alt="logo">
                     </a>
+                    <div class="text-center d-flex flex-column mb-10">
+                        <p class="mb-2 text-dark font-size-sm">Please check that you are visiting the correct URL</p>
+                        <span style="border-radius:20px;letter-spacing:.09rem;border-color:#eee !important;background-color:whitesmoke;" class="w-auto px-8 border text-dark font-size-h6 font-weight-light py-2">
+                            <i class="bi bi-lock-fill text-success"></i><span class="text-success">https://</span>my.fastquid.ng
+                        </span>
+                    </div>
                     <h1 class="ls-tight fw-bolder h3">Sign in to your account</h1>
                     <div class="mt-3 text-sm text-muted">
                         <span>Don't have an account?</span> 

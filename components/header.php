@@ -12,6 +12,18 @@ $userEmail = htmlspecialchars($_SESSION['email'] ?? '');
 $fullName  = trim("$firstName $lastName");
 $avatar = htmlspecialchars($_SESSION['avatar'] ?? '');
 
+$pageTitles = [
+    'dashboard' => 'Dashboard',
+    'profile'   => 'Profile',
+    'loan'     => 'Loans',
+    'bank'   => 'Bank Details',
+    'security'  => 'Security',
+    'support'  => 'Support',
+    'loan-application'  => 'Loan Application',
+];
+
+$title = $pageTitles[$pageTitle] ?? 'FastQuid';
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -21,7 +33,7 @@ $avatar = htmlspecialchars($_SESSION['avatar'] ?? '');
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="color-scheme" content="light">
 
-    <title>FastQuid&trade; :: Dashboard</title>
+    <title>FastQuid&trade; :: <?= $title ?></title>
 
     <meta name="description" content="At Fastquid, we’ve got you covered with our terrific digital lending solutions designed just for folks like you, whether you work for a big company or a small business.">
     <meta property="og:url" content="https://fastquid.ng/"/>

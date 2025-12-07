@@ -1,4 +1,5 @@
 <?php
+$pageTitle = 'dashboard';
 include "./components/header.php";
 ?>
     <div class="d-flex flex-column flex-lg-row h-lg-100 gap-1">
@@ -35,7 +36,7 @@ include "./components/header.php";
                                                 <div class="text-2xl text-heading fw-bolder ls-tight" id="balance-amount">₦23,000.48</div>
                                             </div>
                                             <div class="ms-auto align-self-end">
-                                                <button type="button" class="btn btn-sm btn-danger">Get a Loan</button>
+                                                <button type="button" data-bs-target="#loanTermsModal" data-bs-toggle="modal" class="btn btn-sm btn-danger">Get a Loan</button>
                                             </div>
                                         </div>
                                     </div>
@@ -153,6 +154,10 @@ include "./components/header.php";
             </div>
         </div>
     </div>
+
+    <?php
+        include "./modals/loan-terms-modal.php";
+    ?>
     <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/switcher.js"></script>
